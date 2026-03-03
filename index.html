@@ -20,188 +20,109 @@
 
     .card {
       background: rgba(255,255,255,0.05);
-      backdrop-filter: blur(10px);
       border: 1px solid rgba(255,255,255,0.1);
       border-radius: 24px;
       padding: 48px 40px;
-      max-width: 480px;
+      max-width: 420px;
       width: 100%;
       text-align: center;
-      box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+      backdrop-filter: blur(10px);
     }
 
     .avatar {
       width: 100px;
       height: 100px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #7c3aed, #a855f7);
+      background: linear-gradient(135deg, #e94560, #0f3460);
+      margin: 0 auto 20px;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 2.5rem;
-      margin: 0 auto 20px;
-      border: 3px solid rgba(168,85,247,0.5);
-    }=
+    }
 
-    .name {
+    h1 {
+      color: #ffffff;
       font-size: 1.6rem;
       font-weight: 700;
-      color: #fff;
       margin-bottom: 6px;
     }
 
     .role {
+      color: #e94560;
       font-size: 1rem;
-      font-weight: 400;
-      color: #a855f7;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      margin-bottom: 8px;
+      font-weight: 600;
+      margin-bottom: 16px;
     }
 
-    .brand {
-      font-size: 0.95rem;
-      color: #94a3b8;
+    .bio {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.9rem;
+      line-height: 1.6;
       margin-bottom: 32px;
-    }
-
-    .divider {
-      width: 60px;
-      height: 3px;
-      background: linear-gradient(90deg, #7c3aed, #a855f7);
-      border-radius: 2px;
-      margin: 0 auto 32px;
     }
 
     .links {
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 12px;
     }
 
     .btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      padding: 14px 24px;
+      display: block;
+      padding: 14px 20px;
       border-radius: 12px;
       text-decoration: none;
       font-size: 0.95rem;
       font-weight: 600;
-      transition: all 0.3s ease;
-      border: none;
-      cursor: pointer;
+      transition: transform 0.2s, opacity 0.2s;
     }
 
     .btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      opacity: 0.9;
     }
 
-    .btn-whatsapp {
-      background: linear-gradient(135deg, #25d366, #128c7e);
+    .btn-primary {
+      background: #e94560;
       color: #fff;
     }
 
-    .btn-instagram {
-      background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af);
+    .btn-outline {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.3);
       color: #fff;
     }
 
-    .btn-email {
-      background: rgba(255,255,255,0.08);
-      color: #e2e8f0;
-      border: 1px solid rgba(255,255,255,0.15);
-    }
-
-    .btn-email:hover {
-      background: rgba(255,255,255,0.15);
-    }
-
-    .btn-projeto {
-      background: linear-gradient(135deg, #7c3aed, #a855f7);
-      color: #fff;
-    }
-
-    .icon { font-size: 1.2rem; }
-
-    .verse {
-      margin-top: 36px;
-      padding: 16px;
-      background: rgba(255,255,255,0.04);
-      border-left: 3px solid #a855f7;
-      border-radius: 8px;
-      text-align: left;
-    }
-
-    .verse p {
-      font-size: 0.82rem;
-      color: #94a3b8;
+    .versículo {
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      color: rgba(255,255,255,0.5);
+      font-size: 0.8rem;
       font-style: italic;
       line-height: 1.6;
-    }
-
-    .verse span {
-      display: block;
-      margin-top: 6px;
-      font-size: 0.78rem;
-      color: #a855f7;
-      font-style: normal;
-      font-weight: 600;
-    }
-
-    .footer {
-      margin-top: 24px;
-      font-size: 0.75rem;
-      color: #475569;
     }
   </style>
 </head>
 <body>
   <div class="card">
-
     <div class="avatar">✝️</div>
-
-    <h1 class="name">Jeovander C. Souza</h1>
-    <p class="role">Designer</p>
-    <p class="brand">📺 LUZ BÍBLICA TV</p>
-
-    <div class="divider"></div>
+    <h1>Jeovander C. Souza</h1>
+    <p class="role">Designer Gráfico & Visual</p>
+    <p class="bio">Criando identidades visuais com propósito.<br/>Piracicaba — SP 🇧🇷</p>
 
     <div class="links">
-
-      <a class="btn btn-whatsapp"
-         href="https://wa.me/5519999985908"
-         target="_blank" rel="noopener">
-        <span class="icon">💬</span> WhatsApp
-      </a>
-
-      <a class="btn btn-instagram"
-         href="https://instagram.com/luzemreels"
-         target="_blank" rel="noopener">
-        <span class="icon">📸</span> Instagram — @luzemreels
-      </a>
-
-      <a class="btn btn-email"
-         href="mailto:forcabiblica72@gmail.com">
-        <span class="icon">✉️</span> forcabiblica72@gmail.com
-      </a>
-
-      <a class="btn btn-projeto"
-         href="https://jeovander.github.io/biblia-explicada/"
-         target="_blank" rel="noopener">
-        <span class="icon">📖</span> Bíblia Explicada
-      </a>
-
+      <a class="btn btn-primary" href="mailto:seuemail@gmail.com">📧 Fale comigo</a>
+      <a class="btn btn-outline" href="https://instagram.com/seuinstagram" target="_blank">📸 Instagram</a>
+      <a class="btn btn-outline" href="https://wa.me/5519900000000" target="_blank">💬 WhatsApp</a>
     </div>
 
-    <div class="verse">
-      <p>"Seja a luz de vocês assim brilhar diante dos homens, para que vejam as suas boas obras."</p>
-      <span>— Mateus 5:16 (NAA)</span>
+    <div class="versículo">
+      "Tudo o que fizerem, façam de todo o coração, como para o Senhor."<br/>
+      — Colossenses 3:23 (NVI)<br/><br/>
+      <span style="font-style:normal;">Seu trabalho tem propósito. Faça com excelência! 🙏</span>
     </div>
-
-    <p class="footer">© 2026 Jeovander C. Souza</p>
   </div>
 </body>
 </html>
